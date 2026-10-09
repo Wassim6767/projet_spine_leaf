@@ -1,0 +1,43 @@
+name: spine_leaf
+topology:
+  kinds:
+    linux:
+      image: frr-lab:latest
+  nodes:
+    lf1:
+      kind: linux
+      binds: 
+      - cnfgs/cnfgs_lf:/etc/frr/daemons
+      - cnfgs/lf1/frr.conf:/etc/frr/frr.conf
+    lf2: 
+      kind: linux
+      binds: 
+      - cnfgs/cnfgs_lf:/etc/frr/daemons
+      - cnfgs/lf2/frr.conf:/etc/frr/frr.conf
+    lf3: 
+      kind: linux
+      binds: 
+      - cnfgs/cnfgs_lf:/etc/frr/daemons
+      - cnfgs/lf3/frr.conf:/etc/frr/frr.conf
+    lf4: 
+      kind: linux
+      binds: 
+      - cnfgs/cnfgs_lf:/etc/frr/daemons
+      - cnfgs/lf4/frr.conf:/etc/frr/frr.conf
+    sp1: 
+      kind: linux
+      binds: 
+      - cnfgs/cnfgs_sp:/etc/frr/daemons
+      - cnfgs/sp1/frr.conf:/etc/frr/frr.conf
+    sp2: 
+      kind: linux
+      binds: 
+      - cnfgs/cnfgs_sp:/etc/frr/daemons
+      - cnfgs/sp2/frr.conf:/etc/frr/frr.conf
+  links:
+    - type: veth
+      endpoints:
+        - node: lf1
+          interface: eth1
+        - node: sp1
+          interface: eth1

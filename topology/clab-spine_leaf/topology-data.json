@@ -1,0 +1,225 @@
+{
+  "name": "spine_leaf",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-ae5ac9a0b130",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "lf1": {
+      "index": "0",
+      "shortname": "lf1",
+      "longname": "clab-spine_leaf-lf1",
+      "fqdn": "lf1.spine_leaf.io",
+      "group": "",
+      "labdir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf1",
+      "kind": "linux",
+      "image": "frr-lab:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ae5ac9a0b130",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf1",
+        "clab-node-longname": "clab-spine_leaf-lf1",
+        "clab-node-name": "lf1",
+        "clab-node-type": "",
+        "clab-owner": "najlae",
+        "clab-topo-file": "/home/najlae/projet_spine_leaf/topology/topology.clab.yaml",
+        "containerlab": "spine_leaf"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lf2": {
+      "index": "1",
+      "shortname": "lf2",
+      "longname": "clab-spine_leaf-lf2",
+      "fqdn": "lf2.spine_leaf.io",
+      "group": "",
+      "labdir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf2",
+      "kind": "linux",
+      "image": "frr-lab:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ae5ac9a0b130",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf2",
+        "clab-node-longname": "clab-spine_leaf-lf2",
+        "clab-node-name": "lf2",
+        "clab-node-type": "",
+        "clab-owner": "najlae",
+        "clab-topo-file": "/home/najlae/projet_spine_leaf/topology/topology.clab.yaml",
+        "containerlab": "spine_leaf"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lf3": {
+      "index": "2",
+      "shortname": "lf3",
+      "longname": "clab-spine_leaf-lf3",
+      "fqdn": "lf3.spine_leaf.io",
+      "group": "",
+      "labdir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf3",
+      "kind": "linux",
+      "image": "frr-lab:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ae5ac9a0b130",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf3",
+        "clab-node-longname": "clab-spine_leaf-lf3",
+        "clab-node-name": "lf3",
+        "clab-node-type": "",
+        "clab-owner": "najlae",
+        "clab-topo-file": "/home/najlae/projet_spine_leaf/topology/topology.clab.yaml",
+        "containerlab": "spine_leaf"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lf4": {
+      "index": "3",
+      "shortname": "lf4",
+      "longname": "clab-spine_leaf-lf4",
+      "fqdn": "lf4.spine_leaf.io",
+      "group": "",
+      "labdir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf4",
+      "kind": "linux",
+      "image": "frr-lab:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ae5ac9a0b130",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/lf4",
+        "clab-node-longname": "clab-spine_leaf-lf4",
+        "clab-node-name": "lf4",
+        "clab-node-type": "",
+        "clab-owner": "najlae",
+        "clab-topo-file": "/home/najlae/projet_spine_leaf/topology/topology.clab.yaml",
+        "containerlab": "spine_leaf"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sp1": {
+      "index": "4",
+      "shortname": "sp1",
+      "longname": "clab-spine_leaf-sp1",
+      "fqdn": "sp1.spine_leaf.io",
+      "group": "",
+      "labdir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/sp1",
+      "kind": "linux",
+      "image": "frr-lab:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ae5ac9a0b130",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/sp1",
+        "clab-node-longname": "clab-spine_leaf-sp1",
+        "clab-node-name": "sp1",
+        "clab-node-type": "",
+        "clab-owner": "najlae",
+        "clab-topo-file": "/home/najlae/projet_spine_leaf/topology/topology.clab.yaml",
+        "containerlab": "spine_leaf"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sp2": {
+      "index": "5",
+      "shortname": "sp2",
+      "longname": "clab-spine_leaf-sp2",
+      "fqdn": "sp2.spine_leaf.io",
+      "group": "",
+      "labdir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/sp2",
+      "kind": "linux",
+      "image": "frr-lab:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ae5ac9a0b130",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/najlae/projet_spine_leaf/topology/clab-spine_leaf/sp2",
+        "clab-node-longname": "clab-spine_leaf-sp2",
+        "clab-node-name": "sp2",
+        "clab-node-type": "",
+        "clab-owner": "najlae",
+        "clab-topo-file": "/home/najlae/projet_spine_leaf/topology/topology.clab.yaml",
+        "containerlab": "spine_leaf"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "lf1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:36:ff:f8",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sp1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:0e:9f:a3",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [],
+  "networkNodeAnnotations": [
+    {
+      "id": "vxlan:vxlan0",
+      "type": "vxlan",
+      "label": "vxlan:vxlan0",
+      "position": {
+        "x": 520,
+        "y": 300
+      }
+    }
+  ],
+  "nodeAnnotations": [
+    {
+      "id": "lf1",
+      "position": {
+        "x": 360,
+        "y": 320
+      }
+    },
+    {
+      "id": "lf2",
+      "position": {
+        "x": 160,
+        "y": 560
+      }
+    },
+    {
+      "id": "lf3",
+      "position": {
+        "x": 280,
+        "y": 60
+      }
+    },
+    {
+      "id": "lf4",
+      "position": {
+        "x": 460,
+        "y": 600
+      }
+    },
+    {
+      "id": "sp1",
+      "position": {
+        "x": 600,
+        "y": 60
+      }
+    },
+    {
+      "id": "sp2",
+      "position": {
+        "x": 760,
+        "y": 540
+      }
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {}
+}
