@@ -13,12 +13,12 @@ lf3:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.5
+    hostname: 172.20.20.4
 lf4:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.7
+    hostname: 172.20.20.5
 sp1:
     username: 
     password: 
@@ -28,4 +28,4 @@ sp2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.4
+    hostname: 172.20.20.7

@@ -12,10 +12,10 @@ all:
         clab-spine_leaf-lf2:
           ansible_host: 172.20.20.3
         clab-spine_leaf-lf3:
-          ansible_host: 172.20.20.5
+          ansible_host: 172.20.20.4
         clab-spine_leaf-lf4:
-          ansible_host: 172.20.20.7
+          ansible_host: 172.20.20.5
         clab-spine_leaf-sp1:
           ansible_host: 172.20.20.2
         clab-spine_leaf-sp2:
-          ansible_host: 172.20.20.4
+          ansible_host: 172.20.20.7
