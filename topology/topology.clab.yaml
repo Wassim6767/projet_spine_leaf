@@ -2,7 +2,7 @@ name: spine_leaf
 topology:
   kinds:
     linux:
-      image: frr-lab:10.7.0
+      image: frr-lab:10.7.1
   nodes:
     lf1:
       kind: linux
