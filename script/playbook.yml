@@ -1,0 +1,25 @@
+# script/generate.yml
+---
+- name: Generate FRR configs for the spine-leaf lab
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars_files:
+    - datafile.yml          # defines the `routers` dictionary
+
+  vars:
+    output_dir: "{{ playbook_dir }}/../topology/cnfgs"
+
+  tasks:
+    - name: Render frr.conf for each router
+      ansible.builtin.template:
+        src: "{{ playbook_dir }}/template/frr.conf.j2"
+        dest: "{{ output_dir }}/{{ item.key }}/frr.conf"
+        mode: "0644"
+      vars:
+        hostname: "{{ item.key }}"     # lf1, sp2, ...
+        router: "{{ item.value }}"     # loopback + interfaces of that router
+      loop: "{{ routers | dict2items }}"
+      loop_control:
+        label: "{{ item.key }}"
