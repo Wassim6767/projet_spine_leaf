@@ -1,0 +1,13 @@
+frr defaults datacenter
+hostname {{ hostname }}
+!
+interface lo
+ ip address {{ router.loopback }}
+!
+{% for i in router.interfaces %}
+interface {{ i.name }}
+ description to {{ i.to }}
+ ip address {{ i.ip }}
+ no shutdown
+!
+{% endfor %}
