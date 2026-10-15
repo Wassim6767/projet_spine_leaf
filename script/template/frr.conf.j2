@@ -10,6 +10,19 @@ interface {{ i.name }}
  ip address {{ i.ip }}
  no shutdown
 !
+{% endfor %}
+router bgp {{ router.ASN }}
+ bgp router-id {{ router.loopback.split('/')[0] }}
+ no bgp ebgp-requires-policy
+{% for i in router.interfaces %}
+{% set peer = routers[i.to].interfaces | selectattr('to', 'equalto', hostname) | first %}
+ neighbor {{ peer.ip.split('/')[0] }} remote-as {{ routers[i.to].ASN }}
+ neighbor {{ peer.ip.split('/')[0] }} update-source lo
+{% endfor %}
+ !
+ address-family ipv4 unicast
+  network {{ router.loopback }}
+ exit-address-family
+!
 wr
 !
-{% endfor %}
