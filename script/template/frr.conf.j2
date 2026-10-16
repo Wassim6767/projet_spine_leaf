@@ -17,7 +17,6 @@ router bgp {{ router.ASN }}
 {% for i in router.interfaces %}
 {% set peer = routers[i.to].interfaces | selectattr('to', 'equalto', hostname) | first %}
  neighbor {{ peer.ip.split('/')[0] }} remote-as {{ routers[i.to].ASN }}
- neighbor {{ peer.ip.split('/')[0] }} update-source lo
 {% endfor %}
  !
  address-family ipv4 unicast

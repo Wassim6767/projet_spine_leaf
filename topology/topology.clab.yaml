@@ -40,6 +40,8 @@ topology:
       - cnfgs/cnfgs_sp:/etc/frr/daemons
       - cnfgs/sp2/frr.conf:/etc/frr/frr.conf
       - cnfgs/vtysh.conf:/etc/frr/vtysh.conf
+    win-01:
+      kind: bridge
   links:
     - type: veth
       endpoints:
@@ -89,4 +91,9 @@ topology:
           interface: eth2
         - node: sp2
           interface: eth4
-        
+    - type: veth
+      endpoints:
+        - node: lf1
+          interface: eth3
+        - node: win-01
+          interface: lf1-eth3
